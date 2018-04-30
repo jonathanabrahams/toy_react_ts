@@ -21,9 +21,11 @@ export class PasswordValidator extends React.Component<IPasswordValidatorProps, 
             isValid: false,
             message: null
         };
+        this.validator = this.validator.bind(this);
     }
 
     public validator = (event: any) => {
+        console.log(this);
         const password = event.target.value;
         const result = Validator(password);
         this.setState({ isValid: (result.valid), message: (result.message) });
