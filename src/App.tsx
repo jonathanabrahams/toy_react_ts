@@ -1,12 +1,12 @@
 import * as React from 'react';
-import {PasswordInput} from './components/PasswordInput';
+import { PasswordValidator } from './components/PasswordValidator';
 
 class App extends React.Component {
   public render() {
     return (
       <div>
         <h1>Toy React Typescript</h1>
-        <PasswordInput/>
+        <PasswordValidator username={'Billy Bob'} />
       </div>
     );
   }
