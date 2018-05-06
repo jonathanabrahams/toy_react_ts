@@ -1,6 +1,6 @@
 import * as Enzyme from 'enzyme';
-import * as React from 'react';
 import * as Adapter from 'enzyme-adapter-react-16';
+import * as React from 'react';
 Enzyme.configure({adapter: new Adapter()});
 
 describe('Setup test', () => {

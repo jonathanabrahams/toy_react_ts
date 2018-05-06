@@ -1,6 +1,6 @@
 const Validator = (password:string) => {
     return ({
-        message: "Has at least one Lowercase Letter",
+        message: "Has at least one lower-case letter",
         valid: /(?=.*[a-z])/.test(password)
     });
 };
